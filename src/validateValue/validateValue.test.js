@@ -14,4 +14,10 @@ describe('validateValue', () => {
   test('Max', () => {
     expect(validateValue(101)).toBe(false)
   })
+  test('Max', () => {
+    expect(validateValue(0)).toBe(true)
+  })
+  test('Max', () => {
+    expect(validateValue(100)).toBe(true)
+  })
 })
